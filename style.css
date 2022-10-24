@@ -489,14 +489,65 @@ header{
     background-color: #3c0d99;
 }
 
+
+.faq__wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+}
+
+.faq__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+}
+
+.collapsible__btn{
+    width: 100%;
+    border-style: none;
+    background-color: #3c0d99;
+    border-bottom: 2px solid #742cff;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border-bottom 300ms ease;
+}
+
+.collapsible__btn:hover{
+    border-bottom: 2px solid #6415ff;
+}
+
+.collapsible__btn i{
+    transition: transform 300ms ease-in-out;
+}
+
+.collapsible__btn:hover i{
+    transform: rotateZ(180deg);
+}
+
+
 #footer{
     background-color: #1a202c;
+    display: flex;
+    justify-content: center;
 }
 
 .footer__container{
     display: flex;
     flex-direction: column;
     padding: 72px 72px 24px;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .footer__row{
